@@ -4,13 +4,15 @@ body {
     margin: 0;
     color: #333;
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
-/* Article Layout */
+/* Article Layout - Text constrained to 700px */
 .article-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
     background: white;
     min-height: 100vh;
 }
@@ -18,47 +20,73 @@ body {
 h1.article-title {
     font-size: 2.5rem;
     color: #2c3e50;
+    margin-top: 2rem;
     margin-bottom: 2rem;
     text-align: center;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1rem;
 }
 
 .article-text {
-    margin: 2rem 0;
+    margin: 2rem auto;
     font-size: 1.1rem;
     color: #444;
+    max-width: 700px; /* Strictly enforce text width */
+    padding: 0 1rem;
 }
 
 /* Quiz Component */
 .quiz-wrapper {
-    margin: 3rem 0;
-    background: #f8f9fa;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    text-align: center;
-    border: 1px solid #e9ecef;
+    margin: 3rem auto;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    width: 100%;
+    max-width: 850px; /* Capped at 850px */
+}
+
+/* Media Query for small screens */
+@media (max-width: 850px) {
+    .quiz-wrapper {
+        max-width: 100%;
+    }
+}
+
+.quiz-inner {
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .quiz-inner h3 {
     margin-top: 0;
     color: #2c3e50;
+    text-align: center;
 }
 
 .image-container {
-    margin: 20px auto;
+    margin: 0 auto;
     position: relative;
-    min-height: 300px;
+    width: 100%;
+    min-height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 8px;
+    border-radius: 0;
     overflow: hidden;
+    background: transparent; /* No background */
 }
 
 .city-image {
-    max-width: 100%;
-    max-height: 400px;
-    border-radius: 4px;
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: cover;
+    display: block;
+    border-radius: 0;
     transition: opacity 0.3s ease;
 }
 
@@ -70,9 +98,9 @@ h1.article-title {
     background: rgba(255, 255, 255, 0.8);
     border: none;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
     color: #333;
     cursor: pointer;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
@@ -93,11 +121,19 @@ h1.article-title {
 }
 
 .prev-hint-btn {
-    left: 10px;
+    left: 20px;
 }
 
 .next-hint-btn {
-    right: 10px;
+    right: 20px;
+}
+
+/* Controls Container */
+.quiz-controls-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 0 20px;
+    text-align: center;
 }
 
 .hint-counter {
@@ -111,8 +147,7 @@ h1.article-title {
     flex-direction: column;
     gap: 15px;
     align-items: center;
-    max-width: 500px;
-    margin: 0 auto;
+    width: 100%;
 }
 
 .input-group {
