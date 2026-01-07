@@ -1,0 +1,205 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Article Layout */
+.article-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: white;
+    min-height: 100vh;
+}
+
+h1.article-title {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.article-text {
+    margin: 2rem 0;
+    font-size: 1.1rem;
+    color: #444;
+}
+
+/* Quiz Component */
+.quiz-wrapper {
+    margin: 3rem 0;
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    border: 1px solid #e9ecef;
+}
+
+.quiz-inner h3 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+.image-container {
+    margin: 20px auto;
+    position: relative;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.city-image {
+    max-width: 100%;
+    max-height: 400px;
+    border-radius: 4px;
+    transition: opacity 0.3s ease;
+}
+
+/* Navigation Arrows */
+.nav-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s, transform 0.1s;
+    z-index: 5;
+}
+
+.nav-arrow:hover {
+    background: white;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.nav-arrow:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
+.prev-hint-btn {
+    left: 10px;
+}
+
+.next-hint-btn {
+    right: 10px;
+}
+
+.hint-counter {
+    margin: 10px 0 20px;
+    color: #666;
+    font-weight: 500;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+}
+
+.input-wrapper {
+    position: relative;
+    flex-grow: 1;
+}
+
+input[type="text"].guess-input {
+    padding: 10px 15px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.suggestions-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 6px 6px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-height: 200px;
+    overflow-y: auto;
+    text-align: left;
+}
+
+.suggestion-item {
+    padding: 10px 15px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+}
+
+.suggestion-item:last-child {
+    border-bottom: none;
+}
+
+.suggestion-item:hover, .suggestion-active {
+    background-color: #f5f5f5;
+}
+
+button.primary {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-weight: 600;
+    background-color: #3498db;
+    color: white;
+}
+
+button.primary:hover {
+    background-color: #2980b9;
+}
+
+button.primary:disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+}
+
+.feedback {
+    margin-top: 15px;
+    font-weight: bold;
+    min-height: 24px;
+}
+
+.success {
+    color: #27ae60;
+}
+
+.error {
+    color: #c0392b;
+}

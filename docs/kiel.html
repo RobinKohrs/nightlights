@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Städte-Quiz: Norddeutschland</title>
+    <link rel="stylesheet" href="quiz.css" />
+  </head>
+  <body>
+    <div class="quiz-container">
+      <h1>Welche Stadt ist das?</h1>
+      <p>Erkennen Sie die norddeutsche Stadt anhand ihrer Lichter?</p>
+
+      <div class="image-container">
+        <img id="city-image" src="" alt="Stadt Nachtansicht Tipp" />
+      </div>
+
+      <div class="controls">
+        <button id="next-hint-btn" class="secondary" onclick="showNextHint()">
+          Nächster Tipp (Tipp <span id="hint-num">1</span>/3)
+        </button>
+
+        <div class="input-group">
+          <div class="input-wrapper">
+            <input
+              type="text"
+              id="guess-input"
+              placeholder="Name der Stadt..."
+              autocomplete="off"
+            />
+            <ul
+              id="suggestions"
+              class="suggestions-list"
+              style="display: none"
+            ></ul>
+          </div>
+          <button class="primary" onclick="checkGuess()">Raten</button>
+        </div>
+      </div>
+
+      <div id="feedback"></div>
+    </div>
+
+    <script src="quiz.js"></script>
+    <script>
+      // City Specific Configuration
+      const citySolution = "Kiel";
+      const images = [
+        "https://raw.githubusercontent.com/RobinKohrs/nightlights/refs/heads/main/graphic_output/kiel/kiel_0.png",
+        "https://raw.githubusercontent.com/RobinKohrs/nightlights/refs/heads/main/graphic_output/kiel/kiel_1.png",
+        "https://raw.githubusercontent.com/RobinKohrs/nightlights/refs/heads/main/graphic_output/kiel/kiel_2.png",
+      ];
+
+      // Start the game
+      initQuiz();
+    </script>
+  </body>
+</html>
+

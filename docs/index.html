@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Norddeutschland bei Nacht: Ein Quiz</title>
+    <link rel="stylesheet" href="quiz.css" />
+  </head>
+  <body>
+    <div class="article-container">
+      <h1 class="article-title">Lichter des Nordens</h1>
+
+      <div class="article-text">
+        <p>
+          Norddeutschland ist nicht nur für seine raue Küste und das flache Land
+          bekannt, sondern auch für seine pulsierenden Metropolen. Wenn die
+          Sonne untergeht, verwandeln sich diese Städte in leuchtende Inseln
+          inmitten der Dunkelheit. Die Satellitenbilder zeigen uns eine ganz
+          neue Perspektive auf Orte, die wir zu kennen glauben.
+        </p>
+        <p>
+          Doch wie gut kennen Sie den Norden wirklich? Können Sie die Städte
+          allein anhand ihrer nächtlichen Lichtsignaturen erkennen? Wir haben
+          ein kleines Quiz vorbereitet, das Ihre geographischen Kenntnisse auf
+          die Probe stellt.
+        </p>
+      </div>
+
+      <!-- Quiz 1: Bremen -->
+      <div id="quiz-bremen" class="quiz-wrapper"></div>
+
+      <div class="article-text">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur.
+        </p>
+        <p>
+          Die Hansestädte haben eine lange Tradition und sind auch heute noch
+          wichtige Knotenpunkte. Besonders spannend ist die Struktur der Häfen,
+          die nachts oft heller erleuchtet sind als die Innenstädte selbst.
+        </p>
+      </div>
+
+      <!-- Quiz 2: Hamburg -->
+      <div id="quiz-hamburg" class="quiz-wrapper"></div>
+
+      <div class="article-text">
+        <p>
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+          officia deserunt mollit anim id est laborum. Curabitur pretium
+          tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et
+          commodo pharetra, est eros bibendum elit, nec luctus magna felis
+          sollicitudin mauris.
+        </p>
+        <p>
+          Nicht nur die großen Metropolen, sondern auch die kleineren Städte an
+          der Ostsee haben ihren ganz eigenen Charme. Die Nähe zum Wasser prägt
+          oft die Form der Stadtentwicklung und damit auch das Muster der
+          Lichter bei Nacht.
+        </p>
+      </div>
+
+      <!-- Quiz 3: Lübeck -->
+      <div id="quiz-luebeck" class="quiz-wrapper"></div>
+
+      <div class="article-text">
+        <p>
+          Integer in volutpat libero. Animi, id est laborum et dolorum fuga. Et
+          harum quidem rerum facilis est et expedita distinctio. Nam libero
+          tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo
+          minus id quod maxime placeat facere possimus.
+        </p>
+      </div>
+
+      <!-- Quiz 4: Kiel -->
+      <div id="quiz-kiel" class="quiz-wrapper"></div>
+
+      <div class="article-text">
+        <p>
+          Wir hoffen, Sie hatten Spaß bei dieser kleinen Reise durch die
+          nächtliche Landschaft Norddeutschlands. Die Lichter erzählen
+          Geschichten von Infrastruktur, Wirtschaft und dem Leben der Menschen,
+          die diese Region ihr Zuhause nennen.
+        </p>
+      </div>
+    </div>
+
+    <script src="quiz.js"></script>
+    <script>
+      // Initialize quizzes
+      document.addEventListener("DOMContentLoaded", () => {
+        // Bremen
+        new CityQuiz("quiz-bremen", "Bremen", [
+          "https://raw.githubusercontent.com/RobinKohrs/nightlights/refs/heads/main/graphic_output/bremen/bremen_0.png",
+          "https://raw.githubusercontent.com/RobinKohrs/nightlights/refs/heads/main/graphic_output/bremen/bremen_1.png",
+          "https://raw.githubusercontent.com/RobinKohrs/nightlights/refs/heads/main/graphic_output/bremen/bremen_2.png",
+        ]);
+
+        // Hamburg
+        new CityQuiz("quiz-hamburg", "Hamburg", [
+          "https://raw.githubusercontent.com/RobinKohrs/nightlights/refs/heads/main/graphic_output/hamburg/hamburg_0.png",
+          "https://raw.githubusercontent.com/RobinKohrs/nightlights/refs/heads/main/graphic_output/hamburg/hamburg_1.png",
+          "https://raw.githubusercontent.com/RobinKohrs/nightlights/refs/heads/main/graphic_output/hamburg/hamburg_2.png",
+        ]);
+
+        // Lübeck
+        new CityQuiz("quiz-luebeck", "Lübeck", [
+          "https://raw.githubusercontent.com/RobinKohrs/nightlights/refs/heads/main/graphic_output/lübeck/lübeck_0.png",
+          "https://raw.githubusercontent.com/RobinKohrs/nightlights/refs/heads/main/graphic_output/lübeck/lübeck_1.png",
+          "https://raw.githubusercontent.com/RobinKohrs/nightlights/refs/heads/main/graphic_output/lübeck/lübeck_2.png",
+        ]);
+
+        // Kiel
+        new CityQuiz("quiz-kiel", "Kiel", [
+          "https://raw.githubusercontent.com/RobinKohrs/nightlights/refs/heads/main/graphic_output/kiel/kiel_0.png",
+          "https://raw.githubusercontent.com/RobinKohrs/nightlights/refs/heads/main/graphic_output/kiel/kiel_1.png",
+          "https://raw.githubusercontent.com/RobinKohrs/nightlights/refs/heads/main/graphic_output/kiel/kiel_2.png",
+        ]);
+      });
+    </script>
+  </body>
+</html>
