@@ -45,11 +45,11 @@ h1.article-title {
     box-shadow: none;
     background: transparent;
     width: 100%;
-    max-width: 850px; /* Capped at 850px */
+    max-width: 500px; /* Capped at 600px */
 }
 
 /* Media Query for small screens */
-@media (max-width: 850px) {
+@media (max-width: 600px) {
     .quiz-wrapper {
         max-width: 100%;
     }
@@ -83,7 +83,6 @@ h1.article-title {
 .city-image {
     width: 100%;
     height: auto;
-    max-height: 600px;
     object-fit: cover;
     display: block;
     border-radius: 0;
