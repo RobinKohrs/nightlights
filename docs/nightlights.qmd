@@ -1,0 +1,47 @@
+---
+title: "nightlights"
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+    toc-location: left
+    code-fold: true
+    code-summary: "Show Code"
+    backgroundcolor: "#C6DC73"
+    grid:
+      body-width: 600px
+editor: source
+execute:
+  echo: true
+  warning: false
+  message: false
+  freeze: auto
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+library(tidyverse)
+library(polyglotr)
+library(here)
+library(glue)
+library(sf)
+library(davR)
+library(jsonlite)
+library(mapview)
+library(DatawRappr)
+library(DT)
+library(gt)
+library(zoo)
+
+m <- mapview
+
+# Define paths
+p_data = here("data")
+p_csv = here("data", "csv")
+p_excel = here("data", "excel")
+p_geo_vec = here("data", "geodata", "vector")
+p_geo_ras = here("data", "geodata", "raster")
+p_graphic = here("graphic_output")
+```
+
