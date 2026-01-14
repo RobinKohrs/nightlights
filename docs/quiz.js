@@ -200,12 +200,14 @@ class CityQuiz {
 
   updateImage() {
     this.imgElement.src = this.images[this.currentHintIndex];
-    
+
     // Update hint status text
     if (this.currentHintIndex === 0) {
       this.hintStatusSpan.textContent = "Satellitenbild";
     } else {
-      this.hintStatusSpan.textContent = `Tipp ${this.currentHintIndex} von ${this.images.length - 1}`;
+      this.hintStatusSpan.textContent = `Tipp ${this.currentHintIndex} von ${
+        this.images.length - 1
+      }`;
     }
 
     // Update button states
