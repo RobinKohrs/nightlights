@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis version="3.40.5-Bratislava" saveUserFull="Robin Kohrs" projectname="nightlights" saveUser="rk" saveDateTime="2026-01-14T13:40:10">
+<qgis version="3.40.5-Bratislava" saveUserFull="Robin Kohrs" projectname="nightlights" saveUser="rk" saveDateTime="2026-01-14T13:47:48">
   <homePath path="."/>
   <title>nightlights</title>
   <transaction mode="Disabled"/>
@@ -5006,7 +5006,7 @@ def my_form_open(dialog, layer, feature):
         </LayoutItem>
         <GuideCollection visible="1"/>
       </PageCollection>
-      <LayoutItem numSubdivisions="1" numSegments="1" mapUuid="{696ea8cd-9c9b-43de-85f0-4843b4a918e8}" size="58.7995,12.3118,mm" lineCapStyle="square" blendMode="0" style="Line Ticks Up" maxBarWidth="150" groupUuid="" labelHorizontalPlacement="0" referencePoint="0" outlineWidthM="0.3,mm" segmentMillimeters="39.6414" type="65646" lineJoinStyle="miter" position="6.6115,108.164,mm" numMapUnitsPerScaleBarUnit="1" method="HorizontalAverage" labelVerticalPlacement="0" subdivisionsHeight="0" labelBarSpace="2" zValue="2" height="2" unitType="km" id="" visibility="0" positionLock="false" minBarWidth="50" unitLabel="km" opacity="1" background="false" excludeFromExports="0" numSegmentsLeft="0" segmentSizeMode="0" boxContentSpace="0" uuid="{200cbdf1-453b-48f7-b534-3b14d7c84dd8}" frameJoinStyle="miter" templateUuid="{200cbdf1-453b-48f7-b534-3b14d7c84dd8}" positionOnPage="6.6115,108.164,mm" outlineWidth="1" itemRotation="0" numUnitsPerSegment="10" frame="false" alignment="0">
+      <LayoutItem numSubdivisions="1" numSegments="1" mapUuid="{696ea8cd-9c9b-43de-85f0-4843b4a918e8}" size="56.0227,12.3118,mm" lineCapStyle="square" blendMode="0" style="Line Ticks Up" maxBarWidth="150" groupUuid="" labelHorizontalPlacement="0" referencePoint="0" outlineWidthM="0.3,mm" segmentMillimeters="36.8646" type="65646" lineJoinStyle="miter" position="6.6115,108.164,mm" numMapUnitsPerScaleBarUnit="1" method="HorizontalAverage" labelVerticalPlacement="0" subdivisionsHeight="0" labelBarSpace="2" zValue="2" height="2" unitType="km" id="" visibility="0" positionLock="false" minBarWidth="50" unitLabel="km" opacity="1" background="false" excludeFromExports="0" numSegmentsLeft="0" segmentSizeMode="0" boxContentSpace="0" uuid="{200cbdf1-453b-48f7-b534-3b14d7c84dd8}" frameJoinStyle="miter" templateUuid="{200cbdf1-453b-48f7-b534-3b14d7c84dd8}" positionOnPage="6.6115,108.164,mm" outlineWidth="1" itemRotation="0" numUnitsPerSegment="10" frame="false" alignment="0">
         <FrameColor alpha="255" green="0" blue="0" red="0"/>
         <BackgroundColor alpha="255" green="255" blue="255" red="255"/>
         <LayoutObject>
@@ -5349,7 +5349,7 @@ def my_form_open(dialog, layer, feature):
             <Option/>
           </customproperties>
         </LayoutObject>
-        <Extent xmin="4419755.26465899311006069" ymin="3211109.01289386209100485" ymax="3241379.38040854968130589" xmax="4444980.57092123292386532"/>
+        <Extent xmin="4356077.23721755016595125" ymin="3406155.1960240937769413" ymax="3438712.18248312547802925" xmax="4383208.05926674325019121"/>
         <LayerSet/>
         <AtlasMap scalingMode="2" atlasDriven="1" margin="0.20000000000000001"/>
         <labelBlockingItems/>

@@ -149,7 +149,7 @@ class CityQuiz {
 
                 <div class="quiz-controls-container">
                     <div class="hint-counter">
-                        Tipp <span class="hint-status">1</span> von ${this.images.length}
+                        <span class="hint-status"></span>
                     </div>
 
                     <div class="controls">
@@ -200,7 +200,13 @@ class CityQuiz {
 
   updateImage() {
     this.imgElement.src = this.images[this.currentHintIndex];
-    this.hintStatusSpan.textContent = this.currentHintIndex + 1;
+    
+    // Update hint status text
+    if (this.currentHintIndex === 0) {
+      this.hintStatusSpan.textContent = "Satellitenbild";
+    } else {
+      this.hintStatusSpan.textContent = `Tipp ${this.currentHintIndex} von ${this.images.length - 1}`;
+    }
 
     // Update button states
     this.prevHintBtn.disabled = this.currentHintIndex === 0;
